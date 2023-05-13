@@ -15,6 +15,6 @@ public class UITimer : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        timer.text = $"Time \n {(Math.Max(0, 300 - Time.realtimeSinceStartup)):F0}";
+        // timer.text = $"Time \n {(Math.Max(0, 300 - Time.realtimeSinceStartup)):F0}";
     }
 }

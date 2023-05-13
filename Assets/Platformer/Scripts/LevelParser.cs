@@ -9,6 +9,8 @@ public class LevelParser: MonoBehaviour {
 	public GameObject brickPrefab;
 	public GameObject questionBoxPrefab;
 	public GameObject stonePrefab;
+	public GameObject waterPrefab;
+	public GameObject goalPrefab;
 	public Transform  environmentRoot;
 
 	// --------------------------------------------------------------------------
@@ -29,6 +31,8 @@ public class LevelParser: MonoBehaviour {
 			'?' => questionBoxPrefab,
 			'x' => rockPrefab,
 			's' => stonePrefab,
+			'w' => waterPrefab,
+			'g' => goalPrefab,
 			_   => throw new ArgumentOutOfRangeException(nameof(letter), letter, null)
 		};
 

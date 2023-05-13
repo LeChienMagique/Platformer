@@ -304,11 +304,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e6568559d6661b4eba05e67f1401a83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  filename: Test
+  filename: Level2
   rockPrefab: {fileID: 2652198492393551387, guid: 981bb3414d36746408a1c5ee5244f1b1, type: 3}
   brickPrefab: {fileID: 2652198492393551387, guid: d94221691cf23ce429136e2be05d002b, type: 3}
   questionBoxPrefab: {fileID: 2652198492393551387, guid: 97d0fe6850ab3714eaa654f26f4ca9f8, type: 3}
   stonePrefab: {fileID: 2652198492393551387, guid: e2bf2963d586ea44ea04e84c9ae1fa8e, type: 3}
+  waterPrefab: {fileID: 5348668383039141255, guid: 21e9f0475e8ca3a4393a74263542a8d7, type: 3}
+  goalPrefab: {fileID: 6513763023203934550, guid: 41539f081a8e04d409d0a0e300a70e69, type: 3}
   environmentRoot: {fileID: 727678647}
 --- !u!114 &406602704
 MonoBehaviour:
@@ -322,8 +324,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8acd8efd777b9f44a90651cd599684be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainCam: {fileID: 963194227}
-  coinCount: {fileID: 185574932}
+  MainCam: {fileID: 963194227}
+  TimeText: {fileID: 1771955850}
 --- !u!1 &568123288
 GameObject:
   m_ObjectHideFlags: 0
@@ -761,6 +763,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -842,6 +845,89 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24eb67b2f732ba2418ee74efeb1aedcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CameraSpeed: 4
+  Player: {fileID: 1952893819}
+--- !u!1001 &1102414649
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 25209231875716530, guid: 85754112c5d81bd45a121ed5e2f1148a, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 25209231875716530, guid: 85754112c5d81bd45a121ed5e2f1148a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 25209231875716530, guid: 85754112c5d81bd45a121ed5e2f1148a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 25209231875716530, guid: 85754112c5d81bd45a121ed5e2f1148a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 25209231875716530, guid: 85754112c5d81bd45a121ed5e2f1148a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 25209231875716530, guid: 85754112c5d81bd45a121ed5e2f1148a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 25209231875716530, guid: 85754112c5d81bd45a121ed5e2f1148a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 25209231875716530, guid: 85754112c5d81bd45a121ed5e2f1148a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 25209231875716530, guid: 85754112c5d81bd45a121ed5e2f1148a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 25209231875716530, guid: 85754112c5d81bd45a121ed5e2f1148a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 25209231875716530, guid: 85754112c5d81bd45a121ed5e2f1148a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 797804559978426120, guid: 85754112c5d81bd45a121ed5e2f1148a, type: 3}
+      propertyPath: m_Name
+      value: Mario Basic
+      objectReference: {fileID: 0}
+    - target: {fileID: 7339851161159601978, guid: 85754112c5d81bd45a121ed5e2f1148a, type: 3}
+      propertyPath: CoinCount
+      value: 
+      objectReference: {fileID: 185574932}
+    - target: {fileID: 7339851161159601978, guid: 85754112c5d81bd45a121ed5e2f1148a, type: 3}
+      propertyPath: ScoreText
+      value: 
+      objectReference: {fileID: 568123290}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85754112c5d81bd45a121ed5e2f1148a, type: 3}
 --- !u!1 &1347998688
 GameObject:
   m_ObjectHideFlags: 0
@@ -1162,6 +1248,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: {fileID: 1771955850}
+--- !u!1 &1952893819 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 797804559978426120, guid: 85754112c5d81bd45a121ed5e2f1148a, type: 3}
+  m_PrefabInstance: {fileID: 1102414649}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2025143741
 GameObject:
   m_ObjectHideFlags: 0
